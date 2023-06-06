@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bloglar</title>
+</head>
+<body>
+  <h1> Bloglar </h1>
+  <br>
+  <hr>
+  <br>
+    {% for i in maqolalar %}
+    <ul>
+        <li>
+            <a href="blog/{{i.id}}/">{{i.sarlavha}}</a>
+        </li>
+    </ul>
+    <hr>
+  <form>
+    <input name="s" placeholder="Sarlavha...">
+    <input type="date" sana="s" placeholder="Sana...">
+    <input name="s" placeholder="Sarlavha...">
+    <input name="s" placeholder="Sarlavha...">
+  </form>
+    <a href="/logout/"><h3>Logout</h3></a>
+
+</body>
+</html>
